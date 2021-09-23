@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Add Todo"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_below="@id/textView6"
+        android:layout_centerHorizontal="true"
+        android:hint="Todo Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_below="@id/editTextTextPersonName"
+        android:gravity="start|top"
+        android:hint="Todo Description"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextTextMultiLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/checkBox"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+
+
+</RelativeLayout>
